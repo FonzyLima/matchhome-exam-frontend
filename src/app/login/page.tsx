@@ -14,14 +14,14 @@ export default function Login() {
     lName: string,
     pass: string,
   ) => {
-    const registrationData = {
+    const loginData = {
       fName: fName,
       lName: lName,
       pass: pass,
     };
 
     axios
-      .post("http://localhost:8080/api/login", registrationData)
+      .post("http://localhost:8080/api/login", loginData)
       .then((response) => console.log(response.data)) // Handle success response
       .catch((error) => console.error("Error:", error.response.data)); // Handle error response
   };
@@ -79,9 +79,12 @@ export default function Login() {
           value="Login"
         />
       </form>
+      <Link href="/register">
       <div className="mt-6 w-fit rounded-[20px] px-[40px] bg-slate-500">
         Register
       </div>
+      </Link>
+     
     </div>
   );
 }
