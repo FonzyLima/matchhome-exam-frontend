@@ -7,7 +7,7 @@ const Header = () => {
             <p className="text-[57px] font-extrabold text-[#1D3461]">Amaia Scapes Laguna</p>
             <p className="text-[39px] font-extrabold text-[#007366]" style={{ letterSpacing: '10px' }}>PROPERTY LIST</p>
         </div>
-        <div className="">
+        <div className="max-h-[350px] overflow-hidden">
         <Image src={header} alt="Header Image" />
         </div>
       

@@ -15,7 +15,7 @@ const PropertyCard = ({
 }) => {
   return (
     <div className="w-full rounded-[27px] border-[1px] border-solid border-[#007E66]  bg-[#007E66] flex flex-col">
-      <div className="px-[86px] py-[33px] grid grid-rows-2 grid-flow-col gap-[43px] bg-white rounded-t-[27px]">
+      <div className="px-[86px] py-[33px] grid grid-rows-2 grid-flow-col gap-[43px] justify-between text-center bg-white rounded-t-[27px]">
         <div className="text-[15.675px] font-semibold">Property Type</div>
         <div className="text-[14px] font-normal">{propType}</div>
         <div className="text-[15.675px] font-semibold">Model</div>
